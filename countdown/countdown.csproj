@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Countdown_2009_Full_Screen_Logo.webp" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Countdown_2009_Full_Screen_Logo.webp" />
+  </ItemGroup>
+
+</Project>

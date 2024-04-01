@@ -1,0 +1,56 @@
+﻿<Window x:Class="countdown.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:countdown"
+        mc:Ignorable="d"
+        Title="Countdown Rules" Height="800" Width="900">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.5*"></RowDefinition>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="0.5*"></RowDefinition>
+            <RowDefinition Height="2*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" TextAlignment="Center" VerticalAlignment="Center" FontSize="30">Countdown Rules</TextBlock>
+        <TextBlock Margin="10,0,30,0" FontSize="15" TextWrapping="Wrap" Grid.Row="1">
+            
+            - Six, face-down, numbered tiles are selected from twenty-four shuffled tiles.
+            <LineBreak/>
+            - The tiles are arranged into two groups: Large Numbers and Small Numbers.
+            <LineBreak/>
+            - There are twenty numbers in the small set, two each of the numbers 1-10
+            <LineBreak/>
+            - One contestant selects as many numbers as desired (unseen) from the large set (between none and all four), and the balance are pulled from the small set to make six numbers in total.
+            <LineBreak/>
+            - A random three-digit target number is then chosen by a computer
+            <LineBreak/>
+            - The contestants are given 30 seconds to get as close as possible to the chosen target by using just the four basic arithmetic operators + - × ÷
+            <LineBreak/>
+            - Not all the digits need to be used.
+            <LineBreak/>
+            - Concatenation of the digits is not allowed (You can’t use a “2” and “2” to make “22”).
+            <LineBreak/>
+            - At no intermediate step in the process can the current running total become negative or involve a fraction.
+            <LineBreak/>
+            - Each numbered tile can only be used once in the calculation.
+            <LineBreak/>
+            - 10 points are awarded for correctly getting the exact solution.
+            <LineBreak/>
+            - 7 points are awarded for getting within 5 of the required solution
+            <LineBreak/>
+            - 5 points are awarded for getting within 10 points of the required solution.
+
+        </TextBlock>
+
+
+        <Button Grid.Row="2" Width="150" Height="40" x:Name="BtnStart" Click="BtnStart_Click">
+            Start Game
+        </Button>
+
+        <Image Grid.Row="3" Grid.Column="0" Source="/Countdown_2009_Full_Screen_Logo.webp"/>
+
+    </Grid>
+</Window>
